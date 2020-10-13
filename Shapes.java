@@ -1,25 +1,32 @@
 import java.util.*;
+import java.lang.Math;
 
-public class Shapes{
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    System.out.print("Enter the side length: ");
-    double side = input.nextDouble();
-    square(side);
+public class Main
+{
+	public static void main(String[] args) {
+    square(5);
+    trangle(6,6);
+		trangle(4.0,5.0,6.0);
+}
+public static void square(double s) {
+double a = s * s;
+System.out.println(a);
+}
+public static void trangle(double b,double h) {
+double a = b * h / 2;
+System.out.println(a);
+}
+
+public static void trangle(double a,double b,double c) {
+double s = (a + b + c )/2;//s stand for semi perimeter
+a = (s - a) ;
+b = (s - b) ;
+c = (s - c) ;
+//System.out.println(s);
+double p = a * b * c * s;
+//System.out.println(p);
+double area = Math.sqrt(p);
+System.out.println(area);
+
   }
-
-  /*
-   * N: square
-   * P: to calculate the area of any square
-   * I: a side measure (double)
-   * R:
-   */
-  public static void square(double s){
-    //side times side
-    double a = s * s;
-
-    //generate some output
-    System.out.println("A square with side " + s + " has an area of " + a);
-  }//close square method
-
 }
