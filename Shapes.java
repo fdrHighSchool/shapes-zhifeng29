@@ -7,7 +7,11 @@ public class Main
     square(5);
     trangle(6,6);
 		trangle(4.0,5.0,6.0);
+		rectangle(2,3);
+		circle(2);
 }
+
+
 public static void square(double s) {
 double a = s * s;
 System.out.println(a);
@@ -27,6 +31,14 @@ double p = a * b * c * s;
 //System.out.println(p);
 double area = Math.sqrt(p);
 System.out.println(area);
+}
+public static void rectangle(double l,double h) {
+double a = l * h;
+System.out.println(a);
+}
 
+public static void circle(double s) {
+double area = s * s * Math.PI;
+System.out.println(area);
   }
 }
