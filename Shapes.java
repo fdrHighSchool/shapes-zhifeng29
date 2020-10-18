@@ -9,7 +9,7 @@ public class Main
 		System.out.println(trangle(4.0,5.0,6.0));
 		System.out.println(rectangle(2,3));
 		System.out.println(circle(2));
-    System.out.println(cube(5));
+                System.out.println(cube(5));
 		System.out.println(triangular_prism(6,6,4));
 		System.out.println(sphere(4));
 
@@ -44,7 +44,7 @@ public class Main
 	public static double circle(double s) {
 		double area = s * s * Math.PI;
 		return area;
-  }
+        }
 
 	public static double cube(double s) {
 		double volume = s * square(s);
